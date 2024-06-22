@@ -1,0 +1,31 @@
+{
+  "name": "quotes-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "API for famous quotes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Washington-Kimani/node-quotes-API.git"
+  },
+  "author": "Washington Kimani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Washington-Kimani/node-quotes-API/issues"
+  },
+  "homepage": "https://github.com/Washington-Kimani/node-quotes-API#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4"
+  }
+}
