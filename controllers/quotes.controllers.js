@@ -31,6 +31,18 @@ export const getQuote = async function (req, res){
     })
 }
 
+export const randomQuote = async (req,res)=>{
+    const quotes = await Qoute.find();
+    const rand = ~~(Math.random()*quotes.length);
+    try{
+        const quote = quotes[rand];
+        res.status(200).json(quote)
+    }catch(err){
+        console.log(err);
+        res.status(500).json("Error getting the quote");
+    }
+}
+
 export const createQuote = async function (req, res){
     const {text, author} = req.body;
     try{

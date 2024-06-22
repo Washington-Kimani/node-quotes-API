@@ -5,7 +5,7 @@ import {
     editQuote,
     exists,
     getAllQuotes,
-    getQuote
+    getQuote, randomQuote
 } from "../controllers/quotes.controllers.js";
 
 const router = express.Router();
@@ -17,6 +17,8 @@ router.get('/', (req, res)=>{
 router.get('/api/quotes', getAllQuotes);
 
 router.get('/api/quote/:id', getQuote);
+
+router.get('/api/quote', randomQuote);
 
 router.post('/api/quotes',exists,createQuote);
 
